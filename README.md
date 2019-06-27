@@ -6,3 +6,5 @@ This is my readme file edited in GITHub
 Another change
 
 and another
+
+This is in another branch
