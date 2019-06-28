@@ -1,0 +1,9 @@
+node {
+    stage('clone repo') {
+        git 'https://github.com/jerrycan321/jenkinsTutorial.git'
+    }
+
+    stage('Print file from GIT'){
+        sh 'cat mypipefile'
+    }
+}
