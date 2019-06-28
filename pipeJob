@@ -6,4 +6,8 @@ node {
     stage('Print file from GIT'){
         sh 'cat mypipefile'
     }
+    
+    stage('Finished'){
+      sh 'echo Finished!'
+      }
 }
