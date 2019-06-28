@@ -7,6 +7,10 @@ node {
         sh 'cat mypipefile'
     }
     
+    stage('Send email') {
+       mail bcc: '', body: 'This is a test', cc: '', from: '', replyTo: '', subject: 'Test from Jenkins pipeline', to: 'jerome.haynes-smith@oracle.com'
+       }
+       
     stage('Finished'){
       sh 'echo Finished!'
       }
